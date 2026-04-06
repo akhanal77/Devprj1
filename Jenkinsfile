@@ -15,7 +15,7 @@ pipeline{
                     HOME = '.'
             }
             steps{
-                sh 'npm install'
+                sh 'npm:v8 install'
                 sh 'npm build'
             }
 
