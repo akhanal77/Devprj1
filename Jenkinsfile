@@ -9,7 +9,7 @@ pipeline{
         }
         stage('Build FrontEnd'){
             agent {
-                docker { image 'node:current-alpine3.13'}
+                docker { image 'node:trixie-slim'}
             }
             environment {
                     HOME = '.'
